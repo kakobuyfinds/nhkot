@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>JoyaGoo spreadsheet – svenska guider för fynd och passform</title>
+  <meta name="description" content="Utforska JoyaGoo spreadsheet med svenska råd om storlekar, QC-bilder och köpplanering. Hitta kategorier för sneakers, kläder och accessoarer hos Cafans.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#173f44">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="JoyaGoo spreadsheet – välj med bättre underlag">
+  <meta property="og:description" content="En svensk läsguide till passform, bildgranskning och genomtänkta produktval. Kategorilänkarna leder till Cafans.">
+  <meta property="og:image" content="https://www.sneakers4u.nl/img/images/2023/08/21/nike-air-max-90-triple-red-aj1285-602.jpeg">
+  <meta property="og:image:alt" content="Röd Nike Air Max 90 fotograferad från sidan mot vit bakgrund">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://www.sneakers4u.nl" crossorigin>
+
+  <!-- Filnamn: index.html. Lägg till canonical och og:url när publiceringsadressen är bestämd. -->
+  <!--
+    Huvudfras: JoyaGoo spreadsheet.
+    Sekundära sökteman: JoyaGoo fynd, JoyaGoo storleksguide,
+    JoyaGoo QC-guide och JoyaGoo köpguide.
+    Längre sökfraser ingår naturligt i kategoriråd, artiklar och FAQ.
+
+    Research: tio domäner hittades via webbsökning.
+    Googles resultatsida var inte åtkomlig; placeringar på Googles
+    förstasida har inte verifierats.
+    Underlag:
+    joyagoosheets.com – kategorier och QC.
+    sheetjoyagoo.com – produktöversikt.
+    joyagoospreadsheet.com – fynd och köpflöde.
+    joyagoo--spreadsheet.com – kategorier; endast sökutdrag.
+    joyagoo-spreadsheets.org – guider och bildtyper.
+    joyago.makeup – mode och jämförelser.
+    joyagoo.net – köpchecklista.
+    joyagoospreadsheet.gg – kategorier och frågor.
+    joyagoo.io – guide och QC; endast sökutdrag.
+    ssfinds.com/joyagoo-spreadsheet – köpguide.
+    Inga uppgifter om priser, erbjudanden, omdömen eller driftstatus
+    har återanvänts.
+  -->
+
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4f1e9;
+      --ink: #173f44;
+      --text: #243c3e;
+      --muted: #526566;
+      --line: #d4d9d1;
+      --accent: #b44029;
+      --white: #fffefa;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--text);
+      font: 17px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 4px;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 5px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1, h2, h3, p, figure { margin: 0; }
+
+    h1, h2, h3 {
+      color: var(--ink);
+      line-height: 1.15;
+      text-wrap: balance;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 6vw, 5.3rem);
+      letter-spacing: -.055em;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 3vw, 2.7rem);
+      letter-spacing: -.035em;
+    }
+
+    h3 { font-size: 1.22rem; }
+
+    p + p { margin-top: 1rem; }
+
+    .wrap {
+      width: min(1180px, 92%);
+      margin-inline: auto;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-decoration: none;
+    }
+
+    .small {
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    .eyebrow {
+      font-size: .76rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .category-section { padding: 25px 0 30px; }
+
+    .category-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 14px;
+    }
+
+    .category-heading h2 {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 9px;
+    }
+
+    .categories a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 76px;
+      padding: 12px 14px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .94rem;
+    }
+
+    .categories a span {
+      font-size: .75rem;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .categories a:hover {
+      border-color: var(--ink);
+      background: #e9eee7;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.12fr 1fr;
+      gap: 38px;
+      align-items: center;
+      padding: 32px 0 58px;
+    }
+
+    .hero .lead {
+      font-size: 1.08rem;
+      max-width: 56ch;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      background: var(--ink);
+      color: white;
+      border-radius: 3px;
+      padding: 13px 20px;
+      margin-top: 24px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button:hover { background: #24575d; }
+
+    .hero figure {
+      background: #fff;
+      border-radius: 50% 50% 4px 4px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .hero img {
+      width: 100%;
+      aspect-ratio: 1.1;
+      object-fit: contain;
+      padding: 28px;
+    }
+
+    .hero figcaption {
+      border-top: 1px solid var(--line);
+      padding: 13px 22px;
+      font-size: .78rem;
+      color: var(--muted);
+      background: var(--white);
+    }
+
+    .answer {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 24px;
+      background: var(--ink);
+      color: #f5f5ec;
+      padding: 29px;
+      border-radius: 4px;
+    }
+
+    .answer strong {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+
+    .answer p { max-width: 80ch; }
+
+    .section { padding: 58px 0; }
+
+    .section-head {
+      max-width: 740px;
+      margin-bottom: 27px;
+    }
+
+    .section-head p {
+      margin-top: 15px;
+      color: var(--muted);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .tile { min-width: 0; }
+
+    .tile .photo {
+      display: block;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .tile img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: contain;
+    }
+
+    .tile figcaption {
+      padding-top: 13px;
+      font-size: .86rem;
+    }
+
+    .tile figcaption strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+
+    .tile figcaption span { color: var(--muted); }
+
+    .note {
+      font-size: .82rem;
+      color: var(--muted);
+      margin-top: 22px;
+    }
+
+    .guide-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 45px;
+      border-top: 1px solid var(--line);
+    }
+
+    .side-note {
+      background: #e4e9df;
+      padding: 21px;
+      margin-top: 22px;
+      border-left: 3px solid var(--ink);
+      font-size: .9rem;
+    }
+
+    .articles article {
+      padding: 0 0 29px;
+      margin-bottom: 29px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .articles article:last-child { margin-bottom: 0; }
+
+    .articles h3 {
+      font-size: 1.55rem;
+      margin-bottom: 15px;
+    }
+
+    .articles p { max-width: 78ch; }
+
+    .article-num {
+      font-size: .78rem;
+      color: var(--accent);
+      font-weight: 800;
+      letter-spacing: .08em;
+      margin-bottom: 12px;
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+      margin-top: 23px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: .94rem;
+      background: var(--white);
+    }
+
+    caption {
+      text-align: left;
+      padding: 15px;
+      font-weight: 750;
+      color: var(--ink);
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 13px 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    th {
+      background: #e6ebe3;
+      color: var(--ink);
+    }
+
+    td:first-child {
+      font-weight: 700;
+      width: 27%;
+    }
+
+    .faq { border-top: 1px solid var(--line); }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.65fr;
+      gap: 48px;
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 19px 0;
+    }
+
+    details:first-child { padding-top: 0; }
+
+    summary {
+      cursor: pointer;
+      font-weight: 750;
+      line-height: 1.45;
+      color: var(--ink);
+      padding-right: 8px;
+    }
+
+    details p {
+      margin-top: 12px;
+      font-size: .97rem;
+      color: var(--muted);
+    }
+
+    .closing {
+      padding: 32px;
+      background: #e4e9df;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      border-radius: 4px;
+      margin-bottom: 45px;
+    }
+
+    .closing h2 { font-size: 1.7rem; }
+
+    .closing .button {
+      margin: 0;
+      flex-shrink: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 25px 0 35px;
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    footer p { max-width: 95ch; }
+    footer a { font-weight: 700; }
+
+    @media (min-width: 900px) {
+      .articles,
+      .faq-grid > div:last-child {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 1100px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .categories {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .guide-layout {
+        grid-template-columns: 1fr;
+        gap: 26px;
+      }
+
+      .guide-layout aside { max-width: 720px; }
+
+      .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 27px;
+      }
+
+      .hero { gap: 22px; }
+    }
+
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+
+      .top { padding: 17px 0; }
+
+      .top .small {
+        max-width: 145px;
+        text-align: right;
+      }
+
+      .categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .category-heading { display: block; }
+
+      .category-heading .small {
+        display: block;
+        margin-top: 5px;
+      }
+
+      .categories a { min-height: 73px; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 15px;
+        padding-bottom: 32px;
+      }
+
+      .hero figure { border-radius: 90px 90px 4px 4px; }
+
+      .hero img {
+        aspect-ratio: 1.4;
+        padding: 22px;
+      }
+
+      .answer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 23px;
+      }
+
+      .section { padding: 38px 0; }
+
+      .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .tile:last-child {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        align-items: center;
+      }
+
+      .closing {
+        display: block;
+        padding: 24px;
+      }
+
+      .closing .button { margin-top: 20px; }
+
+      th, td {
+        padding: 12px;
+        font-size: .88rem;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#webpage",
+        "name": "JoyaGoo spreadsheet – svenska guider för fynd och passform",
+        "description": "En svensk läsguide till passform, bildgranskning och genomtänkta produktval. Kategorilänkarna leder till Cafans.",
+        "inLanguage": "sv",
+        "about": {
+          "@type": "Thing",
+          "name": "JoyaGoo spreadsheet"
+        },
+        "hasPart": [
+          {"@id": "#passform"},
+          {"@id": "#bildguide"},
+          {"@id": "#kopplan"},
+          {"@id": "#faq"}
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "#passform",
+        "headline": "En storleksguide som börjar i garderoben",
+        "inLanguage": "sv",
+        "mainEntityOfPage": {"@id": "#webpage"},
+        "description": "Jämför sneakers, huvtröjor och andra plagg med egna mått och säljarens måttabell."
+      },
+      {
+        "@type": "Article",
+        "@id": "#bildguide",
+        "headline": "Läs bilden innan du bestämmer dig",
+        "inLanguage": "sv",
+        "mainEntityOfPage": {"@id": "#webpage"},
+        "description": "Skilj mellan produktbilder och QC-bilder och kontrollera variant, detaljer och mått."
+      },
+      {
+        "@type": "Article",
+        "@id": "#kopplan",
+        "headline": "Gör en kort lista med tydliga beslut",
+        "inLanguage": "sv",
+        "mainEntityOfPage": {"@id": "#webpage"},
+        "description": "Spara produktlänk och variant, räkna på total kostnad och kontrollera villkoren innan betalning."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq",
+        "inLanguage": "sv",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Vad betyder JoyaGoo spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Det är ett sökbegrepp för produktlistor och guider kopplade till JoyaGoo. Den här sidan är en svensk läsguide med kategorilänkar till Cafans, inte en verifierad lista över produkter som går att beställa genom JoyaGoo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vart leder länkarna på sidan?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kategoriknapparna leder till respektive kategori på cafans.com. Övriga länkar leder till Cafans startsida. Du lämnar den här guiden när du klickar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hur väljer jag rätt storlek?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Mät ett plagg som redan passar eller mät fotlängden. Jämför måtten i centimeter med den aktuella variantens storlekstabell och kontrollera hur säljaren har mätt."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Är inspirationsbilderna QC-bilder?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nej. Bilderna visar exempel på modeller och detaljer. QC-bilder ska avse det specifika exemplaret som kontrolleras. En inspirationsbild bevisar varken lagerstatus, material eller äkthet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Visar sidan aktuella priser och frakt till Sverige?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nej. Kontrollera produktpris, vald variant, tillgängliga fraktalternativ och tillämpliga avgifter hos den tjänst där du genomför köpet. Någon bestämd leveranstid eller totalsumma anges inte här."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Är detta en officiell sida för JoyaGoo eller märkena?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nej. Guiden är fristående och representerar inte JoyaGoo, Nike, Louis Vuitton, Gucci, Hermès eller Dior. Varumärkena används för att beskriva bildexemplen; bilderna innebär inget samarbete eller produktlöfte."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/nhkot/">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="https://www.cafans.com" aria-label="Besök Cafans startsida">
+      FORM &amp; FYND<span aria-hidden="true"> ↗</span>
+    </a>
+    <span class="small">En svensk guide till genomtänkta val</span>
+  </header>
+
+  <main class="wrap">
+    <section class="category-section" aria-labelledby="categories-title">
+      <div class="category-heading">
+        <h2 id="categories-title">Börja med en kategori</h2>
+        <span class="small">Alla kategorier öppnas hos Cafans ↗</span>
+      </div>
+
+      <nav class="categories" aria-label="Produktkategorier hos Cafans">
+        <a href="https://cafans.com/category-911-Shoes.html">
+          Skor<span>Sneakers och andra skomodeller</span>
+        </a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">
+          Huvtröjor &amp; tröjor<span>Passform och lager på lager</span>
+        </a>
+        <a href="https://cafans.com/category-913-T-Shirts.html">
+          T-shirts<span>Längd, halsringning och tyg</span>
+        </a>
+        <a href="https://cafans.com/category-914-Jackets.html">
+          Jackor<span>Silhuett och rörelseutrymme</span>
+        </a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html">
+          Byxor &amp; shorts<span>Midja, ben och proportioner</span>
+        </a>
+        <a href="https://cafans.com/category-916-Headwear.html">
+          Huvudbonader<span>Kepsar och andra modeller</span>
+        </a>
+        <a href="https://cafans.com/category-917-Sets.html">
+          Set<span>Överdel och underdel tillsammans</span>
+        </a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html">
+          Underkläder<span>Storlek och materialkontakt</span>
+        </a>
+        <a href="https://cafans.com/category-919-Jersey.html">
+          Sporttröjor<span>Modell, mått och användning</span>
+        </a>
+        <a href="https://cafans.com/category-920-Accessories.html">
+          Accessoarer<span>Små detaljer för helheten</span>
+        </a>
+      </nav>
+    </section>
+
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Stil med eftertanke / Svensk läsguide</p>
+        <h1 id="page-title">JoyaGoo spreadsheet</h1>
+        <p class="lead">
+          Från en intressant bild till ett genomtänkt val. Börja med form
+          och användning, jämför mått och granska detaljer innan du
+          bestämmer dig.
+        </p>
+        <p class="small" style="margin-top:16px">
+          Fristående vägledning. Sidans kategorilänkar leder till Cafans;
+          de är inte direkta JoyaGoo-produktlänkar.
+        </p>
+        <a class="button" href="https://www.cafans.com">
+          Utforska Cafans <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <figure>
+        <img
+          src="https://www.sneakers4u.nl/img/images/2023/08/21/nike-air-max-90-triple-red-aj1285-602.jpeg"
+          alt="Röd Nike Air Max 90 i sidovy med synlig luftkudde i hälen"
+          width="660"
+          height="600"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async">
+        <figcaption>
+          Nike Air Max 90 · en bildreferens för färg, profil och sulans form.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="answer" aria-label="Kort förklaring">
+      <strong>Det korta svaret</strong>
+      <p>
+        En <b>JoyaGoo spreadsheet</b> används som utgångspunkt för att
+        upptäcka och ordna produktlänkar. Använd en sådan lista för att
+        göra ett urval, och låt sedan den aktuella produktbeskrivningen,
+        storlekstabellen och bilderna avgöra nästa steg.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="inspiration-title">
+      <div class="section-head">
+        <p class="eyebrow">Bildanteckningar</p>
+        <h2 id="inspiration-title">En detalj i taget.</h2>
+        <p>
+          Sportplagg, mönster och smycken ställer olika frågor.
+          Här är fem bildreferenser att öva blicken på.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <figure class="tile">
+          <a class="photo" href="https://www.cafans.com"
+             aria-label="Besök Cafans – inspiration från Nike-huvtröja">
+            <img
+              src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/91d20b8d-6c55-4672-a1cf-78d6e13e7120/AS%2BM%2BNK%2BCLUB%2BFT%2BPO%2BHOODIE.png"
+              alt="Modell i svart Nike-huvtröja med känguruficka och liten vit logotyp"
+              width="400"
+              height="500"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <figcaption>
+            <strong>Nike / Volym</strong>
+            <span>Se hur axel, mudd och fåll formar huvtröjan.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a class="photo" href="https://www.cafans.com"
+             aria-label="Besök Cafans – inspiration från Hermès T-shirt">
+            <img
+              src="https://assets.hermes.com/is/image/hermesproduct/piqures-sellier-t-shirt--657810HA0C-worn-2-0-0-800-800_g.jpg"
+              alt="Modell i ljusgrå Hermès T-shirt med rund hals och bröstficka"
+              width="400"
+              height="500"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <figcaption>
+            <strong>Hermès / Proportion</strong>
+            <span>Jämför ärmlängd, halsringning och plaggets fall.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a class="photo" href="https://www.cafans.com"
+             aria-label="Besök Cafans – inspiration från Gucci-keps">
+            <img
+              src="https://cuccuini.it/sync/foto/FW25---Gucci---7890164HBA89784.JPG"
+              alt="Beige och brun Gucci-keps med GG-mönster och grönröd rand på skärmen"
+              width="400"
+              height="500"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <figcaption>
+            <strong>Gucci / Struktur</strong>
+            <span>Granska skärmens kurva, paneler och justering.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a class="photo" href="https://www.cafans.com"
+             aria-label="Besök Cafans – inspiration från Louis Vuitton-scarf">
+            <img
+              src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-carre-monogram-silhouette-90--M97189_PM2_Front%20view.png?hei=480&amp;wid=480"
+              alt="Kvadratisk Louis Vuitton-scarf med mörkt monogrammönster och ljus kant"
+              width="400"
+              height="500"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <figcaption>
+            <strong>Louis Vuitton / Mönster</strong>
+            <span>Se helheten och hur kanten ramar in motivet.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="tile">
+          <a class="photo" href="https://www.cafans.com"
+             aria-label="Besök Cafans – inspiration från Dior-halsband">
+            <img
+              src="https://assets.christiandior.com/is/image/diorprod/N1583DVOCYD301_E01?wid=480&amp;hei=480&amp;fit=constrain"
+              alt="Guldfärgat Dior-halsband med länkad kedja och bokstäver dekorerade med ljusa kristaller"
+              width="400"
+              height="500"
+              loading="lazy"
+              decoding="async">
+          </a>
+          <figcaption>
+            <strong>Dior / Skala</strong>
+            <span>Tänk på kedjans längd och hängets placering.</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="note">
+        Bilderna är stilreferenser, inte erbjudanden eller QC-bilder.
+        De visar inte att motsvarande vara finns hos Cafans.
+        Bildkällor: Sneakers4u, Nike, Hermès, Cuccuini, Louis Vuitton
+        och Dior. Inget varumärkessamarbete påstås.
+      </p>
+    </section>
+
+    <section class="section guide-layout" aria-labelledby="guides-title">
+      <aside>
+        <p class="eyebrow">Tema / Bättre beslutsunderlag</p>
+        <h2 id="guides-title">Tre korta guider att använda direkt.</h2>
+        <p class="side-note">
+          Börja med användningen: vardag, träning eller ett extra lager.
+          Det gör det lättare att välja bort sådant som bara ser rätt
+          ut på bild.
+        </p>
+      </aside>
+
+      <div class="articles">
+        <article id="passform" aria-labelledby="fit-title">
+          <p class="article-num">01 / JOYAGOO STORLEKSGUIDE</p>
+          <h3 id="fit-title">En storleksguide som börjar i garderoben</h3>
+          <p>
+            Vill du jämföra sneakers före köp? En användbar storleksguide
+            för sneakers börjar med att mäta fotlängd i centimeter.
+            Läs sedan modellens egen tabell och kontrollera om måttet
+            gäller foten, innersulan eller skon. En vanlig EU-storlek
+            räcker inte som enda underlag.
+          </p>
+          <p>
+            För att välja hoodie efter bröstvidd kan du mäta ett plagg
+            som redan passar. Ska du jämföra tröjor med måttabell behöver
+            både din mätning och tabellen avse samma sak: plaggets bredd
+            plant eller kroppens omkrets. Sök efter T-shirts med rätt
+            längd genom att också jämföra axel och ärm.
+          </p>
+
+          <div class="table-scroll">
+            <table>
+              <caption>Från kategori till en konkret kontroll</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Ditt mål</th>
+                  <th scope="col">Det du bör kontrollera</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Välja jacka för lager på lager</td>
+                  <td>
+                    Bröstvidd, ärmlängd och rörelseutrymme med en tröja under.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Byxor med rätt midjemått</td>
+                  <td>
+                    Midjans mätmetod, höftvidd, gren och innerbenslängd.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Shorts med lagom benlängd</td>
+                  <td>
+                    Innerben och benöppning, jämfört med ett par du använder.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Hitta matchande set</td>
+                  <td>
+                    Överdelens och underdelens separata mått samt färgbeteckning.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kontrollera storlek på underkläder</td>
+                  <td>
+                    Midjeintervall, materialsammansättning och information
+                    om elasticitet.
+                  </td>
+                </tr>
+                <tr>
+                  <td>Välja tröja för träning</td>
+                  <td>
+                    Rörelsevidd och materialbeskrivning; skilj sporttröja
+                    från supporterplagg.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article id="bildguide" aria-labelledby="qc-title">
+          <p class="article-num">02 / JOYAGOO QC-GUIDE</p>
+          <h3 id="qc-title">Läs bilden innan du bestämmer dig</h3>
+          <p>
+            Det finns en viktig skillnad mellan produktbilder och
+            QC-bilder: produktbilder visar hur en modell presenteras,
+            medan QC-bilder ska visa det specifika exemplaret som
+            kontrolleras. Om du får QC-bilder före leverans, jämför rätt
+            färg, storlek och variant mot din beställning. Be om fler
+            vyer när något är otydligt.
+          </p>
+          <p>
+            För att kontrollera färg och material behöver du även läsa
+            beskrivningen; skärm och belysning kan ändra färgintrycket.
+            För accessoarer är det användbart att mäta huvudomfång för
+            keps, jämföra halsbandets längd och kontrollera spännen och
+            sömmar. Bilder kan visa detaljer men räcker inte ensamma
+            för att fastställa äkthet eller materialsammansättning.
+          </p>
+        </article>
+
+        <article id="kopplan" aria-labelledby="plan-title">
+          <p class="article-num">03 / JOYAGOO KÖPGUIDE</p>
+          <h3 id="plan-title">Gör en kort lista med tydliga beslut</h3>
+          <p>
+            När du letar efter JoyaGoo fynd för nybörjare hjälper det att
+            spara produktlänk och variant tillsammans med mått och en egen
+            fråga om varje vara. Kontrollera gamla produktlänkar genom att
+            öppna dem och säkerställa att modell och säljare fortfarande
+            stämmer. En sparad bild säger inget om dagens tillgänglighet.
+          </p>
+          <p>
+            Innan betalning: räkna på total kostnad med produktpris,
+            eventuella tjänsteavgifter, frakt och andra tillämpliga
+            avgifter. Jämför fraktalternativ utifrån det faktiska paketet
+            och läs villkoren för ändringar och returer. Att planera en
+            mindre första beställning gör det lättare att bedöma passform
+            och process innan du beställer mer.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <div class="faq-grid">
+        <div>
+          <p class="eyebrow">Vanliga frågor</p>
+          <h2 id="faq-title">Tydliga svar före nästa klick.</h2>
+          <p class="small" style="margin-top:18px">
+            Om sidans innehåll, bilder och länkar.
+          </p>
+        </div>
+
+        <div>
+          <details open>
+            <summary>Vad betyder JoyaGoo spreadsheet?</summary>
+            <p>Det är ett sökbegrepp för produktlistor och guider kopplade till JoyaGoo. Den här sidan är en svensk läsguide med kategorilänkar till Cafans, inte en verifierad lista över produkter som går att beställa genom JoyaGoo.</p>
+          </details>
+
+          <details>
+            <summary>Vart leder länkarna på sidan?</summary>
+            <p>Kategoriknapparna leder till respektive kategori på cafans.com. Övriga länkar leder till Cafans startsida. Du lämnar den här guiden när du klickar.</p>
+          </details>
+
+          <details>
+            <summary>Hur väljer jag rätt storlek?</summary>
+            <p>Mät ett plagg som redan passar eller mät fotlängden. Jämför måtten i centimeter med den aktuella variantens storlekstabell och kontrollera hur säljaren har mätt.</p>
+          </details>
+
+          <details>
+            <summary>Är inspirationsbilderna QC-bilder?</summary>
+            <p>Nej. Bilderna visar exempel på modeller och detaljer. QC-bilder ska avse det specifika exemplaret som kontrolleras. En inspirationsbild bevisar varken lagerstatus, material eller äkthet.</p>
+          </details>
+
+          <details>
+            <summary>Visar sidan aktuella priser och frakt till Sverige?</summary>
+            <p>Nej. Kontrollera produktpris, vald variant, tillgängliga fraktalternativ och tillämpliga avgifter hos den tjänst där du genomför köpet. Någon bestämd leveranstid eller totalsumma anges inte här.</p>
+          </details>
+
+          <details>
+            <summary>Är detta en officiell sida för JoyaGoo eller märkena?</summary>
+            <p>Nej. Guiden är fristående och representerar inte JoyaGoo, Nike, Louis Vuitton, Gucci, Hermès eller Dior. Varumärkena används för att beskriva bildexemplen; bilderna innebär inget samarbete eller produktlöfte.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing" aria-label="Fortsätt till Cafans">
+      <div>
+        <p class="eyebrow">Nästa steg</p>
+        <h2>Välj kategori. Jämför detaljer. Bestäm dig sedan.</h2>
+      </div>
+      <a class="button" href="https://www.cafans.com">
+        Till Cafans <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>
+      <strong>FORM &amp; FYND</strong> · Fristående svensk inspirations-
+      och läsguide. Inga köp eller betalningar genomförs här.
+      Kontrollera produktuppgifter och villkor på den webbplats där
+      du handlar.
+      <a href="https://www.cafans.com">Besök Cafans ↗</a>
+    </p>
+  </footer>
+</body>
+</html>
